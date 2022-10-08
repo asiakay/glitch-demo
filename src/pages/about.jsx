@@ -12,14 +12,15 @@ import { animated } from "react-spring";
 export default function About() {
   /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
   
+  const [style, trigger] = useWiggle({ x: 250, rotation: 1, scale: 1.2});
   return (
     <div className="page">
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
-      <h1 className="title">
+      <animated.h1 className="title" style={style}>
         About this site
-      </h1>
+      </animated.h1>
       {/* REPLACE OPENING P TAG BELOW WITH CODE FROM TODO */}
-      <p>
+      <p onMouseEnter={trigger}>
         Welcome to the Glitch React starter, where you can instantly create a
         React site that's fully customizable.
       </p>
