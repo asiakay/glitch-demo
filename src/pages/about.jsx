@@ -12,7 +12,7 @@ import { animated } from "react-spring";
 export default function About() {
   /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
   
-  const [style, trigger] = useWiggle({ x: 250, rotation: 1, scale: 1.2});
+  const [style, trigger] = useWiggle({ x: 500, rotation: 1, scale: 3});
   return (
     <div className="page">
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}

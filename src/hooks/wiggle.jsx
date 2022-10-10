@@ -5,13 +5,13 @@ import { usePrefersReducedMotion } from "./prefers-reduced-motion";
 
 // Wiggle function accepts various parameters specifying properties for the animation
 export function useWiggle({
-  x = 0,
-  y = 0,
+  x = 50,
+  y = -100,
   rotation = 0,
   scale = 1,
-  timing = 150,
+  timing = 300,
   springConfig = {
-    tension: 300,
+    tension: 100,
     friction: 10
   }
 }) {
